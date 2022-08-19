@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, Text, ImageBackground, TextInput } from 'react-native';
+import { StyleSheet, View, Text, ImageBackground, TextInput, Button } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 
 export default class Start extends Component {
@@ -15,7 +15,7 @@ export default class Start extends Component {
     return (
       <View style={styles.container}>
         <ImageBackground source={require('../assets/Background-Image.png')} style={styles.image}>
-          <Text style={styles.title}>Chat App</Text>
+          <Text style={styles.title}>Start</Text>
           <View style={styles.box1}>
             <TextInput style={[styles.input, styles.smallText]}
               placeholder='Your Name'
@@ -24,14 +24,10 @@ export default class Start extends Component {
             <View style={styles.colorWrapper}>
               <Text style={[styles.smallText, styles.label]}>Choose Background Color:</Text>
               <View style={styles.colors}>
-                <TouchableOpacity style={(this.state.color === '#090C08') ? [styles.color, styles.selected, styles.color1] : [styles.color, styles.color1]}
-                  onPress={() => this.setState({ color: '#090C08' })} />
-                <TouchableOpacity style={(this.state.color === '#474056') ? [styles.color, styles.selected, styles.color2] : [styles.color, styles.color2]}
-                  onPress={() => this.setState({ color: '#474056' })} />
-                <TouchableOpacity style={(this.state.color === '#8A95A5') ? [styles.color, styles.selected, styles.color3] : [styles.color, styles.color3]}
-                  onPress={() => this.setState({ color: '#8A95A5' })} />
-                <TouchableOpacity style={(this.state.color === '#B9C6AE') ? [styles.color, styles.selected, styles.color4] : [styles.color, styles.color4]}
-                  onPress={() => this.setState({ color: '#B9C6AE' })} />
+                <TouchableOpacity style={[styles.color, styles.color1]} onPress={() => this.setState({ color: '#090C08' })} />
+                <TouchableOpacity style={[styles.color, styles.color2]} onPress={() => this.setState({ color: '#474056' })} />
+                <TouchableOpacity style={[styles.color, styles.color3]} onPress={() => this.setState({ color: '#8A95A5' })} />
+                <TouchableOpacity style={[styles.color, styles.color4]} onPress={() => this.setState({ color: '#B9C6AE' })} />
               </View>
             </View>
             <View style={styles.buttonWrapper}>
@@ -58,7 +54,6 @@ const styles = StyleSheet.create({
   },
   title: {
     flex: 1,
-    // fontFamily: 'Poppins-Bold',
     padding: '20%',
     fontSize: 45,
     fontWeight: 'bold',
@@ -75,7 +70,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   input: {
-    fontFamily: 'Poppins-Regular',
     width: '88%',
     padding: '2%',
     height: 50,
@@ -90,7 +84,6 @@ const styles = StyleSheet.create({
     marginLeft: '6%',
   },
   label: {
-    fontFamily: 'Poppins-Regular',
     marginBottom: '8%',
   },
   colors: {
@@ -102,10 +95,6 @@ const styles = StyleSheet.create({
     width: 40,
     height: 40,
     marginRight: 30,
-  },
-  selected: {
-    borderWidth: '3px',
-    borderColor: 'lightgrey',
   },
   color1: {
     backgroundColor: '#090C08',
@@ -133,7 +122,6 @@ const styles = StyleSheet.create({
     borderRadius: 2,
   },
   buttonText: {
-    fontFamily: 'Poppins-Bold',
     color: '#FFFFFF',
     fontSize: 16,
     fontWeight: 'bold',
@@ -141,6 +129,6 @@ const styles = StyleSheet.create({
   smallText: {
     fontSize: 16,
     fontWeight: 'normal',
-    color: '#757083'
+    fontColor: '#757083'
   }
-})
+}) 

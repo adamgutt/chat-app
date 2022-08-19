@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
-// import { StyleSheet, View, TextInput, Text, Alert, Button, ScrollView } from 'react-native';
-import Start from './components/Start';
-import Chat from './components/Chat';
 import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
+import Start from './components/Start';
+import Chat from './components/Chat';
+
 // Create the navigator
 const Stack = createStackNavigator();
 
-export default class App extends React.Component {
-
-
+export default class App extends Component {
   render() {
     return (
       <NavigationContainer>
@@ -21,6 +19,9 @@ export default class App extends React.Component {
           <Stack.Screen
             name="Start"
             component={Start}
+            options={{
+              headerShown: false
+            }}
           />
           <Stack.Screen
             name="Chat"
@@ -28,6 +29,7 @@ export default class App extends React.Component {
           />
         </Stack.Navigator>
       </NavigationContainer>
+
     );
   }
-}
+} 
