@@ -31,8 +31,6 @@ class CustomAction extends React.Component {
 
     const snapshot = await ref.put(blob);
 
-    blob.close();
-
     return await snapshot.ref.getDownloadURL();
   };
 
@@ -45,7 +43,7 @@ class CustomAction extends React.Component {
           mediaTypes: 'Images',
         }).catch((error) => {
           console.log(error);
-          Alert(error.message || 'An error has occurred!');
+          alert(error.message || 'An error has occurred!');
         });
 
         if (!result.cancelled) {
@@ -55,7 +53,7 @@ class CustomAction extends React.Component {
       }
     } catch (error) {
       console.log(error.message);
-      Alert(error.message || 'An error has occurred!');
+      alert(error.message || 'An error has occurred!');
     }
   };
 
@@ -68,7 +66,7 @@ class CustomAction extends React.Component {
           mediaTypes: 'Images',
         }).catch((error) => {
           console.log(error);
-          Alert(error.message || 'An error has occurred!');
+          alert(error.message || 'An error has occurred!');
         });
 
         if (!result.cancelled) {
@@ -78,7 +76,7 @@ class CustomAction extends React.Component {
       }
     } catch (error) {
       console.log(error.message);
-      Alert(error.message || 'An error has occurred!');
+      alert(error.message || 'An error has occurred!');
     }
   };
 
@@ -100,7 +98,7 @@ class CustomAction extends React.Component {
       }
     } catch (error) {
       console.log(error.message);
-      Alert(error.message || 'An error has occurred!');
+      alert(error.message || 'An error has occurred!');
     }
   };
 
