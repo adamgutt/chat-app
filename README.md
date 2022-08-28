@@ -1,12 +1,12 @@
-Chat App
+**Chat App**
 
-Description - 
+**Description**
 This is a native mobile app built using React Native that allows users to enter a chat room, then send messages, images, and their location. Users can authenticate anonymously using Google Firebase authentication. 
 
-Purpose of this App - 
+**Purpose of this App**
 Chat App was developed to provide an opportunity to learn about native app development, and hone the relevant skills.
 
-Dependencies:
+**Dependencies**
 1. React Native
 2. Expo
 3. Google Firebase
