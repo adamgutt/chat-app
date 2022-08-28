@@ -6,19 +6,19 @@ This is a native mobile app built using React Native that allows users to enter 
 Purpose of this App - 
 Chat App was developed to provide an opportunity to learn about native app development, and hone the relevant skills.
 
-Dependencies - 
-React Native
-Expo
-Google Firebase
-Google Firestore Database
-GiftedChat
-React Native Async Storage
-NetInfo
-react-native-action-sheet
-expo-image-picker
-expo-camera
-expo-location
-react-native-maps
+Dependencies:
+1. React Native
+2. Expo
+3. Google Firebase
+4. Google Firestore Database
+5. GiftedChat
+6. React Native Async Storage
+7. NetInfo
+8. react-native-action-sheet
+9. expo-image-picker
+10. expo-camera
+11. expo-location
+12. react-native-maps
 
 **How to Run the Project**
 
